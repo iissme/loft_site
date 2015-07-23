@@ -1,0 +1,9 @@
+{
+  "name": "loft_homework_1",
+  "devDependencies": {
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-modulizr": "romeovs/gulp-modulizr"
+  },
+  "dependencies": {}
+}

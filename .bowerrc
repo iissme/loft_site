@@ -1,0 +1,6 @@
+{
+  "directory": "app/bower",
+  "analytics": false,
+  "timeout": 40000,
+  "interactive": true
+}
