@@ -1,6 +1,6 @@
 Modernizr.load([{
     load: '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'
-}, {
+    }, {
     test: window.jQuery,
     nope: 'bower/jquery/dist/jquery.js',
     both: ['js/plugins.js'],
@@ -13,10 +13,10 @@ function app($, DEBUG) {
 
     var replacedSVGs = [];
 
-    /**
-     * Загружает код SVG. TODO Убрать в финальном билде
-     */
+
     function init() {
+
+        /** Загрузка код SVG. TODO Убрать в финальном билде **/
 
         $('img.svg').each(function () {
             var $img = jQuery(this);
@@ -42,7 +42,10 @@ function app($, DEBUG) {
             }, 'xml');
 
         });
-
+            $('.s-menu__item a').on('click',function(e) {
+                $('.s-menu__item--active').removeClass('s-menu__item--active');
+                $(e.target).parent().addClass('s-menu__item--active');
+            });
     }
 
     return {
