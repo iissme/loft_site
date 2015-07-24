@@ -1,4 +1,4 @@
->Как установить###
+>Как установить
 
 1. git clone https://github.com/ishlyakhov/loft_homework_1 site
 2. cd loft_homework_1
