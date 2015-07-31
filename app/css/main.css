@@ -74,6 +74,106 @@
         }
     /** end gradient line setup **/
 
+    /** forms **/
+
+        .form {
+            font-family: "fira_sanslight", sans-serif;
+            font-weight: normal;
+        }
+
+        .form__row.cf {
+            margin: 0 0 9px 0;
+        }
+
+        .form__col {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 1px;
+        }
+
+        .form__col--full {
+            width: 100%;
+        }
+
+        .form__col--full--centered {
+            text-align: center;
+        }
+
+        .form__label {
+            color: #959aa8;
+            font-size: 17px;
+        }
+
+        .form__item {
+            width: 100%;
+            outline: 0;
+            border: 1px solid #48cbe8;
+            border-radius: 3px;
+            color: #48cbe8;
+            font-size: 12px;
+            padding: 0 9px;
+        }
+
+        .form__item--input {
+            height: 41px;
+        }
+
+        .form__item--input--hidden {
+            display: none;
+        }
+
+        .form__button {
+            color: #fff;
+            height: 30px;
+            outline: 0;
+            padding: 0px 25px;
+            font: normal 19px "fira_sansbook";
+            line-height: 33px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px 0;
+            background-color: #48cbe8;
+            box-shadow: 0 2px #3ba8c0;
+            top: 0;
+            transition: top 100ms linear, box-shadow 100ms linear;
+            -webkit-transition: top 100ms linear, box-shadow 100ms linear;
+            position: relative;
+        }
+
+        .form__button:hover {
+            box-shadow: 0 0 #3ba8c0;
+            top: 2px;
+        }
+
+        .form__item--textarea {
+            height: 180px;
+            padding: 9px;
+        }
+
+        .form__item--textarea--in-popup {
+            height: 110px;
+        }
+
+        /** placeholder color **/
+            ::-webkit-input-placeholder {
+                color: #48cbe8;
+            }
+
+            :-moz-placeholder { /* Firefox 18- */
+                color: #48cbe8;
+            }
+
+            ::-moz-placeholder {  /* Firefox 19+ */
+                color: #48cbe8;
+            }
+
+            :-ms-input-placeholder {
+                color: #48cbe8;
+            }
+
+            .jquery-fix-placeholder { color: #48cbe8 }
+        /** end placeholder color **/
+    /** end forms **/
 /** end general **/
 
 /** header **/
@@ -128,10 +228,8 @@
         }
 
         .social__link svg path{
-            transition: 300ms;
-            transition-timing-function: ease-in-out;
-            -webkit-transition: 300ms;
-            -webkit-transition-timing-function: ease-in-out;
+            transition: 300ms ease-in-out;
+            -webkit-transition: 300ms ease-in-out;
         }
     /** end social icons **/
 
@@ -325,6 +423,16 @@
         display: inline-block;
     }
 
+    .v-block__header--blue-background {
+        margin: 0 0 25px 0;
+        background-color: #48cbe8;
+        display: block;
+        color: #fff;
+        border-bottom: 17px solid #67dffa;
+        text-align: center;
+        font: normal 27px "fira_sansbook";
+    }
+
     .v-block__content {
         padding-bottom: 30px;
     }
@@ -364,7 +472,7 @@
 
         .v-info__item--left {
             float: left;
-            font: normal 17px/100% "fira_sansmedium";
+            font: normal 16px "fira_sansmedium";
         }
 
         .v-info__item--right {
@@ -381,7 +489,7 @@
             height: 18px;
             border-radius: 4px;
             display: inline-block;
-            margin: 6px -3px 5px 5px;
+            margin: 6px 0 5px 4px;
             color: #fff;
             font-family: 'ProximaNovaCondensedSemibold', monospace;
             background: #3ba8c0;
@@ -399,7 +507,7 @@
             margin: 0;
             list-style: none;
 
-            padding: 0 0 0 50px;
+            padding: 0 0 0 55px;
         }
 
         .icon-work {
@@ -407,12 +515,12 @@
         }
 
         .v_list__item {
-            padding: 0 0 0 76px;
+            padding: 0 0 0 70px;
             margin: 0 0 20px 0;
         }
 
         .v_list__date {
-            font: normal 15px/1 "fira_sanslight";
+            font: normal 15px "fira_sanslight";
         }
 
         .v_list__header {
@@ -420,10 +528,13 @@
         }
 
         .icon-edu {
+            background-position-x: 5px;
             background-image: url(../img/course.png);
-        }
+
+}
 
         .icon-dop {
+            background-position-x: 0px;
             background-image: url(../img/college.png);
         }
     /** var list **/

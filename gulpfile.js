@@ -15,7 +15,8 @@ gulp.task('server', function () {
     browserSync({
         port: 9000,
         server: {
-            baseDir: 'app'
+            baseDir: 'app',
+            index: "works.html"
         }
     });
 });

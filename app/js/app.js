@@ -3,7 +3,7 @@ Modernizr.load([{
     }, {
     test: window.jQuery,
     nope: 'bower/jquery/dist/jquery.js',
-    both: ['js/plugins.js'],
+    both: ['js/plugins.js','bower/bpopup/jquery.bpopup.min.js','bower/jquery-placeholder/jquery.placeholder.min.js'],
     complete: function () {
         app(jQuery, true).run();
     }
@@ -16,7 +16,7 @@ function app($, DEBUG) {
 
     function init() {
 
-        /** Загрузка код SVG. TODO Убрать в финальном билде **/
+        /** Загрузка SVG**/
 
         $('img.svg').each(function () {
             var $img = jQuery(this);
@@ -42,10 +42,28 @@ function app($, DEBUG) {
             }, 'xml');
 
         });
-            $('.s-menu__item a').on('click',function(e) {
-                $('.s-menu__item--active').removeClass('s-menu__item--active');
-                $(e.target).parent().addClass('s-menu__item--active');
+
+        /** Placeholder fix **/
+
+        $('input, textarea').placeholder({ customClass: 'jquery-fix-placeholder' });
+
+        /** Инициализация el **/
+
+        $('.s-menu__item a').on('click',function(e) {
+            $('.s-menu__item--active').removeClass('s-menu__item--active');
+            $(e.target).parent().addClass('s-menu__item--active');
+        });
+
+        $('.v_works__add-link').on('click', function(e){
+            e.preventDefault();
+            $('.popup').bPopup({
+                transition: 'slideIn',
+                closeClass: "popup--close",
+                opacity: 0.75,
+                modalColor: "#58697a"
             });
+        });
+
     }
 
     return {
