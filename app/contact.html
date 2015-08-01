@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="first loftschool's homework ">
+    <meta name="keywords" content="loftschool,homework">
+    <meta name="author" content="Alexander Shlyakhov">
+    <title>Александр Шляхов</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
+    его.</p>
+<![endif]-->
+
+<!-- page wrap -->
+<div class="page-wrapper">
+
+    <!-- head -->
+    <header class="header gradient_line gradient_line--bottom">
+
+        <div class="container container--big">
+
+            <!-- logo -->
+            <a href="" class="header__logo"><img src="img/logo.png" alt="logo" class="logo"/>
+                <span class="header__logo--text"></span>
+            </a>
+            <!-- end logo -->
+
+            <!-- social icons -->
+            <div class="social">
+
+                <a href="#" class="social__link vk">
+                    <img class="svg social__link--image" alt="" src="img/vk.svg"/>
+                    vk.com</a>
+
+                <a href="#" class="social__link tw">
+                    <img class="svg social__link--image" alt="" src="img/twitter.svg"/>
+                    twitter.com</a>
+
+                <a href="#" class="social__link fb">
+                    <img class="svg social__link--image" alt="" src="img/fb.svg"/>
+                    facebook.com</a>
+
+                <a href="#" class="social__link gt">
+                    <img class="svg social__link--image" alt="" src="img/git.svg"/>
+                    github.com</a>
+
+            </div>
+            <!-- end social icons -->
+
+        </div>
+
+    </header>
+    <!-- end head -->
+
+    <!-- main_content -->
+    <div class="container">
+
+        <!-- sidebar -->
+        <aside class="sidebar">
+
+            <!-- main nav -->
+            <nav class="s-navigation">
+                <ul class="s-menu">
+                    <li class="s-menu__item">
+                        <a href="#" class="s-menu__item__link">Обо мне</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="#" class="s-menu__item__link">Мои работы</a>
+                    </li>
+                    <li class="s-menu__item s-menu__item--active">
+                        <a href="#" class="s-menu__item__link">Связаться со мной</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end main nav -->
+
+            <!-- contacts -->
+            <address class="s-contacts">
+                <ul class="s-contacts__list">
+                    <div class="s-contacts__header">
+                        Контакты
+                    </div>
+                    <li class="s-contacts__item icon icon--mail">
+                        <a class="s-contacts__item__link" href="mailto:ishlyxxxxx@xx.x">ishlyxxxxx@xx.x</a>
+                    </li>
+                    <li class="s-contacts__item icon icon--tel">
+                        <a class="s-contacts__item__link" href="tel:+7909xxxxx">+7(909)646-xx-xx</a>
+                    </li>
+                    <li class="s-contacts__item icon icon--skype">
+                        <a class="s-contacts__item__link" href="skype:iixxxxxx">iixxxxxx</a>
+                    </li>
+                </ul>
+            </address>
+            <!-- end contacts -->
+
+        </aside>
+        <!-- end sidebar -->
+
+        <!-- variable-content -->
+        <div class="var-content">
+
+            <!-- contact -->
+            <section class="v-block">
+                <h2 class="v-block__header v-block__header--blue-background">У вас интересный проект? Напишите мне!</h2>
+                <div class="v-block__content cf">
+
+                    <div class="contacts__form-container">
+                        <form action="#" class="form" method="POST" enctype="multipart/form-data">
+
+                            <div class="form__row cf">
+
+                                <div class="form__col form__col--left">
+                                    <label class="form__label">Имя
+                                        <input type="text" name="c-name" class="form__item form__item--input" placeholder="Как к Вам обращаться"/>
+                                    </label>
+                                </div>
+
+                                <div class="form__col form__col--right">
+                                    <label class="form__label">Email
+                                        <input type="text" name="c-email" class="form__item form__item--input" placeholder="Куда мне писать"/>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="form__row cf">
+                                <div class="form__col form__col--full">
+                                    <label class="form__label">Сообщение
+                                        <textarea name="с-message" class="form__item form__item--textarea" placeholder="Кратко в чем суть"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__row cf">
+
+                                <div class="form__col form__col--full">
+                                    <label class="form__label">Введите код,указанный на картинке</label>
+                                </div>
+
+                                <div class="form__col form__col--left">
+                                    <figure class="form__item form__item--capcha">
+                                        <img src="img/capcha.png" alt="" class="form__capcha"/>
+                                    </figure>
+                                </div>
+
+                                <div class="form__col form__col--right">
+                                    <div class="form__item form__item--capcha form__item--capcha--no-border">
+                                        <input type="text" name="c-capcha" class="form__item form__item--input form__item--input--capcha form__capcha" placeholder="Введите код"/>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form__row form__row--contact-buttons cf">
+
+                                <div class="form__col form__col--left">
+                                    <button class="form__button form__button--send form__button--left" type="submit">Отправить</button>
+                                </div>
+
+                                <div class="form__col form__col--right">
+                                    <button class="form__button form__button--gray form__button--right" type="submit">Oчистить</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+            <!-- end my-works -->
+
+        </div>
+        <!-- variable-content -->
+    </div>
+
+    <!-- end main_content -->
+
+    <!-- footer -->
+    <footer class="page-footer gradient_line gradient_line--top">
+        <div class="container">
+            <div class="lock"><a href="/login.html" class="lock__link">Войти</a></div>
+            <div class="copyright">© 2015, Это сайт Александра, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+</div>
+<!-- end page wrap -->
+
+<script src="js/app.js"></script>
+</body>
+
+</html>

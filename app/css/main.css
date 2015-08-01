@@ -86,13 +86,24 @@
         }
 
         .form__col {
-            display: inline-block;
-            vertical-align: top;
-            padding: 0 1px;
+            float: left;
+            padding: 0 2px;
         }
 
         .form__col--full {
             width: 100%;
+        }
+
+        .form__col--left {
+            padding: 0 9px 0 0;
+            width: 50%;
+        
+        }
+
+        .form__col--right {
+            padding: 0 0 0 9px;
+            width: 50%;
+
         }
 
         .form__col--full--centered {
@@ -102,7 +113,8 @@
         .form__label {
             color: #959aa8;
             font-size: 17px;
-        }
+        
+}
 
         .form__item {
             width: 100%;
@@ -126,7 +138,7 @@
             color: #fff;
             height: 30px;
             outline: 0;
-            padding: 0px 25px;
+            padding: 0px 28px;
             font: normal 19px "fira_sansbook";
             line-height: 33px;
             border: none;
@@ -424,14 +436,16 @@
     }
 
     .v-block__header--blue-background {
-        margin: 0 0 25px 0;
+        margin: 1px 0;
         background-color: #48cbe8;
         display: block;
         color: #fff;
         border-bottom: 17px solid #67dffa;
         text-align: center;
         font: normal 27px "fira_sansbook";
-    }
+    
+        padding: 42px 0 36px 0;
+}
 
     .v-block__content {
         padding-bottom: 30px;
