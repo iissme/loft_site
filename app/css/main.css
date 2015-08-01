@@ -424,6 +424,8 @@
     }
 
     .v-block__header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         color: #3ba8c0;
         border-bottom: 2px solid #3ba8c0 ;
         font-family: 'fira_sansbook', sans-serif;

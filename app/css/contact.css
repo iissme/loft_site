@@ -21,6 +21,7 @@
 .form__capcha {
     display: inline-block;
     vertical-align: middle;
+    margin-left: -0.35em;
 }
 
 .form__item--input--capcha {
